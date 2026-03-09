@@ -1,87 +1,37 @@
-/* css selectors */
+@charset "utf-8";
+@import "./reset.css";
 
-* {
-    box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-/* Element selector*/
-main{
-    height: 100svh;
-    /* /* display: grid; */
-    justify-content: center;
-    display: flex;
-    align-items: center;
-
+.conatiner {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
 }
 
-img {
-    height: 100px;
-    border-radius: 50%;
-}
-/* Id selector */
-#main-profile {
-    background-color: #e1e0e0;
-    width: 350px;
-    border-radius: 5px;
-    border: 1px solid #0e0e0e ;
-}
-/* class selectors*/
-.contact-button{
-    text-decoration: none;
+body {
+    background-color: blue;
+    color: #fff;
 }
 
-.profession{
-    text-transform: uppercase;
+.conatiner p {
+    font-size: 32px;
 }
-.profile-card{
-    display: grid;
-    place-items: center;
-    padding: 20px;
+
+header {
+    background-color: brown;
 }
-.detail-text{
-    text-align: center;
-}
-/* adjacent sibling selector */
-h2 + p {
-    text-transform: uppercase;
-    font-weight: 600;
-    color: rgb(244, 97, 24);
-    letter-spacing: 0.5px; /* letter space in between texts */
-}
-/* child selector */
-.skills > li{
-    
-    background-color: #a8a1a1;
-    margin: 5px;
-    color: black;
-    padding: 5px 10px 5px 10px;
-    text-align: center;
-    border-radius: 5px;
+
+li {
     list-style: none;
-    display: inline-block;
-
-}
-.social-text {
-    color: rgb(71, 12, 249);
 }
 
-/* General sibling selectors */
-.contact-button ~ p{
-    color: #a8a1a1;
-    font-size: 12px;
-
+h1 {
+    font-size: 20px;
+    font-weight: 500;
 }
 
-
-/* pseudo-class */
-.contact-button:hover{
-    color: rgb(255, 0, 0);
-    text-decoration: underline;
+ul.flex {
+    gap: 15px;
 }
-/* pseudo element */
-.profile-card::after{
-    content: "Verified professional";
-    font-size: 8px;
-    color: rgb(71, 12, 249);
-    margin-top: 5px;
+.flex li {
+    list-style: none;
+    font-size: 18px;
 }
